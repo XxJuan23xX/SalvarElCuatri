@@ -1,0 +1,93 @@
+nav 
+{
+    display: flex;
+    background-color:#3de031;
+    justify-content: space-between;
+    width: 1000px;
+    padding: 10px;
+    border-style: solid;
+}
+.box
+{
+    display: block;
+    width: 100px;
+    border-style: solid;
+    background-color: rgb(212, 255, 0);
+    justify-content: space-between;
+    text-align: center;
+    height: 20px;
+}
+
+header
+{
+    width: 1000px;
+    display: flex;
+    padding: 10px;
+    background-color: rgb(39, 108, 255);
+    border-style: solid;
+}
+
+.banner
+{
+    display: block;
+    padding: 10px;
+    width: 800px;
+    background-color: rgb(245, 63, 63);
+    text-align: center;
+    border-style: solid;
+}
+.lista
+{
+    display: flex;
+    padding: 5px;
+    padding-right: 15px;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 160px;     
+}
+.logo
+{
+    padding: 10px;
+    width: 150px;
+    background-color: rgb(242, 122, 53);
+    border-style: solid;
+    text-align: center;  
+}
+main
+{
+    display: flex;
+    width: 1000px;
+    border-style: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(62, 245, 178);
+    justify-content: space-between;
+}
+.aside1
+{
+    display: block; 
+    padding: 10px;
+    background-color: rgb(226, 36, 36);
+    width: 200px;
+    text-align: center;
+    height: 200px;
+
+}
+article
+{
+    display: block;
+    background-color: rgb(248, 245, 52);
+    padding: 10px;
+    width: 500px;
+    text-align: center;
+    height: 200px;
+}
+footer
+{
+    height: 50px;
+    background-color: brown;
+    width: 1020px;
+    border-style: solid;
+}
