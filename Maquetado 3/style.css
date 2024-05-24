@@ -1,0 +1,319 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(242 249 192);
+}
+
+/* Estilos del header */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    background-color: #e22b2b;
+    border-style: solid;
+    border-width: 0 0 2px 0; /* Solo borde inferior */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    align-content: center;
+}
+
+header h1 {
+    margin-bottom: 10px; /* Espacio entre el h1 y el h3 */
+    font-size: 32px; /* Tamaño de fuente aumentado */
+}
+
+
+header h3 {
+    margin-top: 0; /* Elimina el margen superior predeterminado */
+    font-size: 18px; /* Tamaño de fuente adecuado para el h3 */
+}
+
+/* Estilos del cuerpo */
+main {
+    padding: 20px; /* Ajuste del padding */
+    position: relative;
+    margin-top: 50px; /* Para evitar que el contenido quede oculto detrás del header */
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Contenedor de la foto y la barra */
+.container {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos de la foto */
+.photo {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 0; /* Foto cuadrada */
+    object-fit: cover;
+    border: 10px solid #505050; /* Borde blanco */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5); /* Sombra para darle un efecto más bonito */
+    margin-right: 20px; /* Espacio entre la foto y la barra */
+}
+
+/* Estilos de la barra */
+.bar {
+    width: 75%;
+    height: 80px;
+    background-color: rgb(232, 124, 124);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 350px;
+    font-size: 30px;
+    margin-top: -20px;
+    border-style: solid;
+}
+
+.left-aligned-text {
+    text-align: left;
+    margin-left: 30px; /* Ajusta este valor según tus necesidades */
+    color: white;
+}
+
+.bar2 {
+    width: 74%;
+    height: 230px;
+    background-color: rgb(230 181 181);
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 350px;
+    font-size: 20px;
+    border-style: solid;
+    margin-top: 10px;
+}
+
+.left-aligned-text1 {
+    text-align: left;
+    margin-left: 20px; /* Ajusta este valor según tus necesidades */
+    color: rgb(0, 0, 0);
+}
+
+.bar3 {
+    width: 100%;
+    height: 180px;
+    background-color: rgb(230 181 181);
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-style: solid;
+    margin-top: 10px;
+}
+
+.bar4 {
+    width: 100%;
+    height: 180px;
+    background-color: rgb(230 181 181);
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-style: solid;
+    margin-top: 10px;
+}
+
+
+.minibarra {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-style: solid;
+    margin-top: 10px;
+}
+
+.left-aligned-text2 {
+    text-align: left;
+    margin-left: 20px; /* Ajusta este valor según tus necesidades */
+    color: rgb(19, 119, 64);
+    margin-top: 0px;
+}
+
+.left-aligned-text3 {
+    text-align: left;
+    margin-left: 20px; /* Ajusta este valor según tus necesidades */
+    color: rgb(19, 119, 64);
+    margin-top: 0px;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.box_text2 {
+    /* Esta es la clase box_text1 */
+    text-align: left;
+    margin-left: 20px; /* Ajusta este valor según tus necesidades */
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    font-size: 25px;
+}
+
+.text1 {
+    text-align: left;
+    margin-left: -210px; /* Ajusta este valor según tus necesidades */
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+}
+
+
+.text2 {
+    text-align: left;
+    margin-left: -250px; /* Ajusta este valor según tus necesidades */
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.bar5 {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(255 144 144);
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-style: solid;
+    margin-top: 10px;
+}
+
+.text3 {
+    text-align: left;
+    margin-left: 20px; /* Ajusta este valor según tus necesidades */
+    color: rgb(33 19 119);
+    margin-top: 10px;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    font-size: 25px;
+}
+
+.bar6 {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(255, 198, 198);
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-style: solid;
+    margin-top: -10px;
+}
+
+.box_text1 {
+    /* Esta es la clase box_text1 */
+    text-align: left;
+    margin-left: 20px; /* Ajusta este valor según tus necesidades */
+    color: rgb(19, 119, 64);
+    margin-top: 10px;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    font-size: 25px;
+}
+
+.bar7 {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(255, 198, 198);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-style: solid;
+    margin-top: -10px;
+}
+
+.text4 {
+    text-align: left;
+    margin-left: -350px; /* Ajusta este valor según tus necesidades */
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+}
+
+.bar8 {
+    width: 100%;
+    height: 120px;
+    background-color: rgb(230 181 181);
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-style: solid;
+    margin-top: 10px;
+}
+
+.left-aligned-text4 {
+    text-align: left;
+    margin-left: 20px; /* Ajusta este valor según tus necesidades */
+    color: rgb(19, 119, 64);
+    margin-top: 0px;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.text5 {
+    text-align: left;
+    margin-left: -230px; /* Ajusta este valor según tus necesidades */
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+/* Estilos del footer */
+.footer {
+    width: 100%;
+    height: 20px; /* Puedes ajustar la altura según tus necesidades */
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed; /* Esto hace que el footer esté siempre en la parte inferior */
+    bottom: 0;
+    left: 0;
+}
+
+.footer-text {
+    color: rgb(255, 255, 255);
+    font-size: 20px; /* Puedes ajustar el tamaño del texto según tus necesidades */
+    margin: 0;
+    margin-top: 10px;
+}
