@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <style>
+        #map {
+            height: 480px;  /* Altura del mapa */
+            width: 80%;    /* Ancho del mapa */
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Registro a evento DEMO</h1>
+        <br>
+        <h3>Llene los siguientes datos para ingresar al evento</h3>
+    </header>
+
+    <main>
+        <div class="registro-form">
+            <form id="formulario">
+                <div class="form-group">
+                    <label for="fecha" class="form-label">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="direccion" class="form-label">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombres" class="form-label">Nombres:</label>
+                    <input type="text" id="nombres" name="nombres" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellidos" class="form-label">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" class="form-input" required>
+                </div>
+                <button type="submit" class="form-button">Enviar</button>
+            </form>
+        </div>
+
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+
+        <div class="registro-lista">
+            <h3>Registro Realizado</h3>
+            <ul id="listaRegistros"></ul>
+            <h3 id="Respuestas" class="text1"></h3> 
+        </div>
+        <div>
+            <img src="CHECK.gif" alt="Check" class="Gif">
+        </div>
+    </main>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGKCwfM236J2SoyyyLQdhuecvAPO1Fg68&callback=initMap&libraries=places"></script>
+    <script>
+        let map, geocoder, marker;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: -34.397, lng: 150.644 },
+                zoom: 8
+            });
+            geocoder = new google.maps.Geocoder();
+            marker = new google.maps.Marker({
+                map: map
+            });
+        }
+
+        document.getElementById('formulario').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const direccion = document.getElementById('direccion').value;
+            geocodeAddress(direccion);
+        });
+
+        function geocodeAddress(address) {
+            geocoder.geocode({ 'address': address }, function(results, status) {
+                if (status === 'OK') {
+                    map.setCenter(results[0].geometry.location);
+                    marker.setPosition(results[0].geometry.location);
+                    marker.setVisible(true);
+                } else {
+                    alert('Geocode was not successful for the following reason: ' + status);
+                }
+            });
+        }
+    </script>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
