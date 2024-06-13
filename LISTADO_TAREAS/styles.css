@@ -1,0 +1,67 @@
+body {
+    background-image: url('PLAYA.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el body */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+}
+
+header {
+    background-color: #6f42c1; /* Color morado */
+    border: 2px solid #000; /* Borde sólido negro */
+    text-align: center; /* Centrar el texto */
+}
+
+header h1 {
+    color: #fff; /* Color blanco */
+    font-style: italic; /* Estilo cursiva */
+    margin: 0; /* Sin margen */
+    padding: 15px 0; /* Espaciado vertical */
+}
+
+h2 {
+    color: #9d1111; /* Color blanco */
+    font-family: Times New Roman;
+}
+
+.card {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+table {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    text-align: center;
+}
+
+.completed {
+    background-color: #d4edda;
+}
+
+.overdue {
+    background-color: #f8d7da;
+}
+
+.btn-morado-brillante {
+    background-color: #9b59b6; /* Morado brillante */
+    border-color: #8e44ad; /* Bordes morado oscuro */
+    color: #fff; /* Texto blanco */
+}
+
+.btn-morado-brillante:hover {
+    background-color: #8e44ad; /* Cambiar color en hover */
+    border-color: #7d3c98; /* Cambiar color en hover */
+}
+
