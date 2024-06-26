@@ -1,0 +1,91 @@
+/* src/pages/Products.css */
+body.products {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category {
+  margin-bottom: 2rem;
+  width: 100%;
+  font-size: 30px;
+}
+
+.category h2 {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 1rem;
+  text-align: center;
+  background-color: #540d5c; /* Fondo del encabezado */
+  padding: 1rem; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  width: 80%; /* Ancho del encabezado */
+  margin: 0 auto 2rem; /* Centrar y agregar margen inferior */
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.product-card {
+  background-color: #ffffffd8;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(33.33% - 1rem); /* 3 cards per row */
+}
+
+.product-card img {
+  max-width: 80%; /* Ajusta la imagen para que ocupe más espacio */
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  font-size: 20px; /* Puedes ajustar este valor según tu preferencia */
+  margin: 0.5rem 0;
+}
+
+.product-card p {
+  font-size: 18px; /* Puedes ajustar este valor según tu preferencia */
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.product-card .stock {
+  font-size: 16px; /* Puedes ajustar este valor según tu preferencia */
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-card button {
+  background-color: #6d207796;
+  color: #000000;
+  border: none;
+  padding: 1rem 2rem; /* Botón más grande */
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: cursive;
+  font-size: 18px; /* Fuente más grande */
+  width: 60%; /* Mantener el ancho al 100% */
+}
+
+.product-card button:hover {
+  background-color: #540d5c;
+}
+
+  
