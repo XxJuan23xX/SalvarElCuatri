@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffbdde;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ae0057;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.gatito {
+    background-color: #ff8cc5;
+    border: 1px solid #f00;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gatito img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-bottom: 1px solid #ff007e;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    background-color: #f892c5;
+}
+
+.gatito h3 {
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+}
+
+.gatito p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.gatito .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff003d;
+}
+
+.gatito:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
