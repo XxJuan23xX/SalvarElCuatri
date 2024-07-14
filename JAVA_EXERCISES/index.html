@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ejercicios JavaScript</h1>
+        
+        <div class="exercise">
+            <h2>Ejercicio 1</h2>
+            <label for="age">Introduce tu edad:</label>
+            <input type="number" id="age">
+            <button onclick="checkAge()">Verificar</button>
+            <p id="ageResult"></p>
+        </div>
+        
+        <div class="exercise">
+            <h2>Ejercicio 2</h2>
+            <label for="grade">Introduce una nota:</label>
+            <input type="number" id="grade">
+            <button onclick="checkGrade()">Calificar</button>
+            <p id="gradeResult"></p>
+        </div>
+        
+        <div class="exercise">
+            <h2>Ejercicio 3</h2>
+            <label for="textInput">Introduce una cadena de texto:</label>
+            <input type="text" id="textInput">
+            <button onclick="addText()">Agregar</button>
+            <button onclick="showTexts()">Mostrar Textos</button>
+            <button onclick="addTextWithPrompt()">Agregar con Prompt</button>
+            <p id="textResult"></p>
+        </div>
+        
+        <div class="exercise">
+            <h2>Ejercicio 4</h2>
+            <label for="dni">Introduce tu número de DNI:</label>
+            <input type="number" id="dni">
+            <button onclick="checkDNI()">Calcular Letra</button>
+            <p id="dniResult"></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
